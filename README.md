@@ -1,2 +1,2 @@
 # pearl-valley
-An African Company That Recruites And Hires Remote Software Engineering Teams
+We Recruite And Hire Remote Software Engineering Teams For Startup Companies.
