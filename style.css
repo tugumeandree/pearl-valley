@@ -5606,6 +5606,7 @@ body {
         font-size: 15px; } }
   
   h1, h2, h3, h4, h5, h6 {
+    color:#02937E;
     font-weight: 400;
     line-height: 1.1; }
   
@@ -5748,6 +5749,7 @@ body {
     transition: box-shadow .25s;
     border-radius: 2px; }
     .card .card-title {
+      color: #296EB6;
       font-size: 24px;
       font-weight: 300; }
       .card .card-title.activator {
@@ -5830,19 +5832,19 @@ body {
         .card .card-content .card-title i {
           line-height: 32px; }
     .card .card-action {
+      color: #27AAE1;
       position: relative;
-      background-color: inherit;
       border-top: 1px solid rgba(160, 160, 160, 0.2);
       padding: 16px 24px; }
       .card .card-action:last-child {
         border-radius: 0 0 2px 2px; }
       .card .card-action a:not(.btn):not(.btn-large):not(.pricing-button):not(.button-collection > button):not(.btn-large):not(.btn-floating) {
-        color: #ffab40;
+        color: #27AAE1;
         margin-right: 24px;
         transition: color .3s ease;
         text-transform: uppercase; }
         .card .card-action a:not(.btn):not(.btn-large):not(.pricing-button):not(.button-collection > button):not(.btn-large):not(.btn-floating):hover {
-          color: #ffd8a6; }
+          color: #27AAE1; }
     .card .card-reveal {
       padding: 24px;
       position: absolute;
