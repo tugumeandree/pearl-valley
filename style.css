@@ -1873,7 +1873,9 @@ body {
    */
   h1 {
     font-size: 2em;
-    margin: 0.67em 0; }
+    margin: 0.67em 0; 
+   color:#02937E !important;
+  }
   
   /**
    * Address styling not present in IE 8/9.
@@ -5481,8 +5483,8 @@ body {
           left: 100%; } }
   
   nav {
-    color: #fff;
-    background-color: #ee6e73;
+    color:  #ee6e73;
+    background-color:#fff;
     width: 100%;
     height: 56px;
     line-height: 56px; }
@@ -5606,7 +5608,6 @@ body {
         font-size: 15px; } }
   
   h1, h2, h3, h4, h5, h6 {
-    color:#02937E;
     font-weight: 400;
     line-height: 1.1; }
   
@@ -5626,7 +5627,9 @@ body {
   h3 {
     font-size: 2.92rem;
     line-height: 110%;
-    margin: 1.46rem 0 1.168rem 0; }
+    margin: 1.46rem 0 1.168rem 0;
+    color:#02937E !important;
+   }
   
   h4 {
     font-size: 2.28rem;
@@ -5636,7 +5639,9 @@ body {
   h5 {
     font-size: 1.64rem;
     line-height: 110%;
-    margin: 0.82rem 0 0.656rem 0; }
+    margin: 0.82rem 0 0.656rem 0; 
+   color:#27AAE1;
+  }
   
   h6 {
     font-size: 1rem;
@@ -6025,7 +6030,9 @@ body {
     padding: 0 2rem;
     text-transform: uppercase;
     vertical-align: middle;
-    -webkit-tap-highlight-color: transparent; }
+    -webkit-tap-highlight-color: transparent;
+    color:#1C75BC;
+  }
   
   .btn.disabled, .disabled.btn-large, .disabled.pricing-button, .button-collection > button.disabled,
   .btn-floating.disabled,

@@ -1,327 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pearl Valley</title>
- 
- <!--Import Google Icon Font-->
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <head>
 
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
     <style>
-       .brand-logo{
-         width:55px;
-         padding-left:10px;
-       }
-    </style>
-    <style>
+      .colored{
+        background-color: #1C75BC;
+      }
+      .brand-logo{
+        height: auto;
+    width: 80px;
+    max-height: 72px;
+    max-width: 250px;
+      }
+   </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <title>Pearl Valley Digital Agency</title>
+
+    <!-- CSS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+
+   
+  </head>
 
 
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
-}
-
-/* The popup form - hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
-}
-
-
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
-</style>
-</head>
-
-<body>
-  
-  
-  
-    <!-- <header class="navbar-fixed">
-      <nav class="row deep-purple darken-3">
-        <div class="col s12">
-          <ul class="right">
-            <li class="right">
-              <a href="" target="_blank"><img class="logos" src="cs2.png"></a>
-            </li>
-            <li class="right">
-              <a href="" target="_blank" class="fa fa-github-square fa-2x waves-effect waves-light"><span class="icon-text"></span></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header> -->
-  <header>
-<nav>
-    <div class="nav-wrapper">
-        
-   <a class="brand-logo" href=""><img src="logo.png"></a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
-
-        <ul class="right hide-on-med-and-down"> 
-        <li class="top-level-nav"><a href="#" class="btn btn-compact btn-hollow">Hire/Contract</a></li>
-              <li class="top-level-nav"><a href="https://www.andrewtugume.com/" target="_blank" class="btn btn-compact btn-hollow">Free Consultancy</a></li> 
-           
+  <body id="home">
+    <!-- Nav Bar -->
+    <div class="navbar-fixed">
+    <nav class="" role="navigation">
+      <div class="nav-wrapper">
+        <a  href=""><img class="brand-logo" src="logo.png"></a>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#home">Product Design</a></li>
+          <li><a href="#service">Brand Development</a></li>
+          <li><a href="#blog">E-Commerce</a></li>
+          <li><a href="#contact">Blogs</a></li>
+          <li>
+            <a href="#contact" class="white black-text waves-effect waves-light btn"
+              >Inquire Now</a
+            >
+          </li>
         </ul>
-        <ul id="mobile-demo" class="sidenav" style="transform: translateX(-100%);">
-            <li class="top-level-nav"><a href="https://www.andrewtugume.com/">Andrew Tugume</a></li>
-            <li class="divider"></li>
-            <li class="top-level-nav"><a href="#" class="btn btn-compact btn-hollow">Hire/Contract</a></li>
-              <li class="top-level-nav"><a href="https://www.andrewtugume.com/" target="_blank" class="btn btn-compact btn-hollow">Free Consultancy</a></li> 
-            <li class="divider"></li>
-                <li class="top-level-nav"><a href="https://code-studio.netlify.app/">Code Studio</a></li>
-          </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#home">Product Design</a></li>
+          <li><a href="#service">Brand Development</a></li>
+          <li><a href="#blog">E-Commerce</a></li>
+          <li><a href="#contact">Blogs</a></li>
+        </ul>
+       
+      </div>
+    </nav>
+  </div>
+
+    <!-- Section: Slider -->
+
+    <section class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/slider2.jpg" />
+          <!-- random image -->
+          <div class="caption center-align">
+            <h1>Pearl Valley </h1>
+            <h5>
+              Product Design, Brand Development, E-Commerce.
+            </h5>
+            <a class=" btn btn-large"
+              >LEARN MORE</a
+            >
+          </div>
+        </li>
+        <li>
+          <img src="img/slider1.jpg" />
+          <!-- random image -->
+          <div class="caption left-align">
+            <h3>Digital Agency</h3>
+            <h5>
+              Produce Brand Sell
+            </h5>
+            <a class=" btn btn-large"
+              >LEARN MORE</a
+            >
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section: Service -->
+
+    <div id="service" class="container scrollspy">
+      <div class="section">
+        <!-- Icon Section -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center black-text">
+                <i class="material-icons">flash_on</i>
+              </h2>
+              <h5 class="center">Digital Product Design</h5>
+
+              <p class="light">
+                We did most of the heavy lifting for you to provide a default
+                stylings that incorporate our custom components. Additionally,
+                we refined animations and transitions to provide a smoother
+                experience for developers.
+              </p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center black-text">
+                <i class="material-icons">group</i>
+              </h2>
+              <h5 class="center">Digital Brand Development</h5>
+
+              <p class="light">
+                By utilizing elements and principles of Material Design, we were
+                able to create a framework that incorporates components and
+                animations that provide more feedback to users. Additionally, a
+                single underlying responsive system across all platforms allow
+                for a more unified user experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center black-text">
+                <i class="material-icons">settings</i>
+              </h2>
+              <h5 class="center">E-Commerce</h5>
+
+              <p class="light">
+                We have provided detailed documentation as well as specific code
+                examples to help new users get started. We are also always open
+                to feedback and can answer any questions a user may have about
+                Materialize.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br />
     </div>
-</nav> 
-</header>
-    <main class="valign-wrapper">
 
-    <div class="form-popup" id="myForm">
-  <form action="" class="form-container">
-    <h4>Hire/Contract</h4>
-    <p>We take great pride in matching our developers with the best partners. Tell us about your team below!</p>
+    <!-- Section: Blog -->
 
-    <label for="email"><b>Company Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="psw"><b>Your Role</b></label>
-    <input type="text" placeholder="Enter Role" name="psw" required>
-
-    <button type="submit" class="btn">Submit</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-
-    <div class="container">
-    <div class="row">
-    <div class="col s12 m6">
-      <span class="container black-text text-lighten-1 ">
-           <img alt="An unhappy scene of world before group email" src="logo.png">
-      </span>
-      </div>
-       <div id="home-what-is-group-email-before-image" class="col s12 m6 home-what-is-group-email-image-container">
-       <p>.</p>
-         <blockquote class="flow-text">Hire Or Contract Remote Software Engineering Teams</blockquote>
-         <ul>
-        <li  class="title black-text text-lighten-3">We Have World Class Teams</li>
-        <div class="spacer"></div>
-            <li  class="title black-text text-lighten-3">We Build First Class Products</li>
-        <div class="spacer"></div>
-        <li  class="title black-text text-lighten-3">We Get The Job Done</li>
-            <div class="spacer"></div>
-        <h5>No Recruitment Process or Consultancy Fees</h5>
-         </ul>
+    <section id="blog" class="section section-blog scrollspy">
+      <h6 class="center">Publish what you think</h6>
+      <h3 class="center">Latest Blogs</h3>
+      <div class="row">
+        <div class="col s12 m6 l3">
+          <div class="card small">
+            <div class="card-image">
+              <img src="img/slider1.jpg" />
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>
+                I am a very simple card. I am good at containing small bits of
+                information. I am convenient because I require little markup to
+                use effectively.
+              </p>
+            </div>
+            <div class="card-action"><a href="#">Read More</a></div>
+          </div>
         </div>
-      </div></div>
-    </main>
-  
-    <div class="fixed-action-btn">
-      <a href="#message" class="modal-trigger btn btn-large btn-floating amber waves-effect waves-light">
-        <i class="large material-icons">message</i>
-      </a>
-    </div>
-  
-    <div class="container">
-  <div class="row">
-  <div class="col s12 l6">
-       <div class="card">
-
-         <div class="card-content black-text">
-           <span class="card-title">Hire/Contract</span>
-            <p>UI/UX Designers</p>
-            <p>Systems Software Engineers</p>
-            <p>Applications Software Engineers</p>
-            <p>Data Scientists</p>
-            <p>Digital Marketeers</p>
-         </div>
-         <div class="card-action center">
-           <h5 class="btn btn-compact btn-hollow" class="open-button" onclick="openForm()">HIRE/CONTRACT</h5>
-         </div>
-
+        <div class="col s12 m6 l3">
+          <div class="card small">
+            <div class="card-image">
+              <img src="img/slider2.jpg" />
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>
+                I am a very simple card. I am good at containing small bits of
+                information. I am convenient because I require little markup to
+                use effectively.
+              </p>
+            </div>
+            <div class="card-action"><a href="#">Read More</a></div>
+          </div>
         </div>
+        <div class="col s12 m6 l3">
+          <div class="card small">
+            <div class="card-image">
+              <img src="img/slider1.jpg" />
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>
+                I am a very simple card. I am good at containing small bits of
+                information. I am convenient because I require little markup to
+                use effectively.
+              </p>
+            </div>
+            <div class="card-action"><a href="#">Read More</a></div>
+          </div>
         </div>
-
-          <div class="col s12 l6">
-         <div class="card">
-
-         <div class="card-content black-text">
-           <span class="card-title">Free Consultancy</span>
-            <p>UI/UX Design</p>
-            <p>Front End Development</p>
-            <p>Back End Development</p>
-            <p>Data Visualization</p>
-            <p>Data Engineering</p>
-         </div>
-
-           <div class="card-action center">
-           <h5 class="btn btn-compact btn-hollow" class="open-button" onclick="openForm()">FREE CONSULTANCY</h5>
-         </div>
-        
-
-        </div> 
-
-</div>
-      </div>
-      </div>
-     </div>
-
-<div class="container">
-  <div class="row">
-  <div class="col s12 l6">
-    <img class="responsive-img" src="tal.jpeg">
-        </div>
-
-          <div class="col s12 l6">
-         
-
-         <div class="card-content black-text">
-           <span>TALENT SOURCING</span>
-            <h5>Robust Talent Pipeline</h5>
-         </div>
-         
-</div>
-      </div>
-      </div>
-     </div>
-
-
-<div class="container">
-  <div class="row">
-
-  
-          <div class="col s12 l6">
-        
-
-         <div class="card-content black-text">
-         <span>TALENT ASSESSMENT</span>
-            <h5>Engineering Competency Framework</h5>
-         </div>
-
-        </div> 
-
-
-    
-
-  <div class="col s12 l6">
-    <img class="responsive-img" src="ases.png">
+        <div class="col s12 m6 l3">
+          <div class="card small">
+            <div class="card-image">
+              <img src="img/slider1.jpg" />
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>
+                I am a very simple card. I am good at containing small bits of
+                information. I am convenient because I require little markup to
+                use effectively.
+              </p>
+            </div>
+            <div class="card-action"><a href="#">Read More</a></div>
+          </div>
         </div>
       </div>
-     </div>
-  </div>
+    </section>
 
- 
-<div class="container">
-  <div class="row">
-<div class="col s12 l6">
-    <img class="responsive-img" src="del.jpg">
+    <!-- Section: Follow -->
+
+    <section class="section section-follow colored darken-2 white-text">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center">
+            <h4>Follow Pearl Valley</h4>
+            <p>Follow us on social media for special offers</p>
+            <a href="#" class="white-text">
+              <i class="fab fa-facebook fa-4x"></i>
+            </a>
+            <a href="#" class="white-text">
+              <i class="fab fa-pinterest fa-4x"></i> </a
+            ><a href="#" class="white-text">
+              <i class="fab fa-twitter fa-4x"></i> </a
+            ><a href="#" class="white-text">
+              <i class="fab fa-linkedin fa-4x"></i> </a
+            ><a href="#" class="white-text">
+              <i class="fab fa-google-plus fa-4x"></i>
+            </a>
+          </div>
         </div>
-  
-          <div class="col s12 l6">
-        
-
-         <div class="card-content black-text">
-           <span>DELIVERY</span>
-            <h5>Remote Full Time Employment/Remote Short Term Contracts</h5>
-         </div>
-
-</div>
-    
-
-  
       </div>
-     </div>
-  </div>
+    </section>
 
 
-<div class="container">
-  <div class="row">
-          <div class="col s12 l6">
-<h5>Software Engineer?</h5>
-  <a href="https://code-studio.netlify.app/" target="_blank"><h5 class="btn btn-compact btn-hollow" class="open-button" onclick="openForm()">GROW YOUR CAREER</h5></a>
- </div>
-  <div class="col s12 l6">
-<h5>Contacts</h5>
-<h6>contact@andrewtugume.com</h6>
-<h6 >+256 783235457</h6>
-<a href="https://andrewtugume.com/" target="_blank"><h6>www.andrewtugume.com</h6></a>
- </div>
-     </div>
-  </div>
+    <!--Section: Contact -->
 
-    <footer class="page-footer deep-purple darken-3">
-      <div class="footer-copyright deep-purple darken-4">
+    <section id="contact" class="section section-contact scrollspy">
         <div class="container">
-          <time datetime="{{ site.time | date: '%Y' }}">&copy; 2020 pearl valley</time>
-          <a href="https://www.facebook.com/tugume.andrew" class="btn-floating btn-fb mx-1">
-            <i class="fab fa-facebook-f"> </i>
-          </a>
-          <a href="https://www.linkedin.com/in/tugume-andrew-402ba3142/" class="btn-floating btn-fb mx-1">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.instagram.com/tugume_drew/" class="btn-floating btn-fb mx-1">
-            <i class="fab fa-instagram"> </i>
-          </a>
-          <a href="https://twitter.com/TugumeAndrew3" class="btn-floating btn-fb mx-1">
-            <i class="fab fa-twitter"> </i>
-          </a>
-         
+          <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input type="text" class="validate">
+                    <label for="icon_prefix">Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" class="validate">
+                    <label for="icon_email">Email</label>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">message</i>
+                      <textarea id="textarea1" class="materialize-textarea"></textarea>
+                      <label for="icon_prefix">Message</label>
+                    </div>
+                  </div>
+                  <input type="submit" value="Submit" class="black btn-large">
+              </form>
+            </div>
+          </div>
+
+    <footer class=" page-footer colored ">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Company Bio</h5>
+            <p class="grey-text text-lighten-4">
+              We are a team of college students working on this project like
+              it's our full time job. Any amount would help support and continue
+              development on this project and is greatly appreciated.
+            </p>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Settings</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Made by
+          <a class="orange-text text-lighten-3" href="http://andrewtugume.com">andrewtugume.com</a>
         </div>
       </div>
     </footer>
-    
-    <!-- Compiled and minified JavaScript -->
-<script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $('.sidenav').sidenav();
-        $('.carousel.carousel-slider').carousel({fullWidth: true});
-         $('.modal-trigger').leanModal();
-            $('.dropdown-trigger').dropdown();
-      });
-    </script>
-       <script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
   </body>
 </html>
