@@ -3,6 +3,35 @@
   <head>
 
     <style>
+
+.postergrad {
+  display: block;
+  position: relative;
+}
+.postergrad::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* W3C */
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+  /* IE6-9 */
+}
+
+
       .colored{
         background-color: #1C75BC;
       }
@@ -19,7 +48,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1.0"
     />
-    <title>Pearl Valley E-Commerce</title>
+    <title>Pearl Valley Startup Accelerator</title>
 
     <!-- CSS -->
     <link
@@ -58,15 +87,15 @@
         <a  href=""><img class="brand-logo" src="logo.png"></a>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="https://www.goods.pearl-valley.com/">Goods And Foods</a></li>
-          <li><a href="#service">Services And Events</a></li>
-          <li><a href="#blog">Digital Products</a></li>
+          <li><a href="https://www.goods.pearl-valley.com/">Book Studio</a></li>
+          <li><a href="#service">Podcast</a></li>
+          <li><a href="#blog">Events</a></li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
-          <li><a href="https://www.goods.pearl-valley.com/">Goods And Foods</a></li>
-          <li><a href="#service">Services And Events</a></li>
-          <li><a href="#blog">Digital Products</a></li>
+          <li><a href="https://www.goods.pearl-valley.com/">Book Studio</a></li>
+          <li><a href="#service">Podcast</a></li>
+          <li><a href="#blog">Events</a></li>
         </ul>
        
       </div>
@@ -75,38 +104,24 @@
 
     <!-- Section: Slider -->
 
-    <section class="slider">
+    <section class="slider postergrad">
       <ul class="slides">
         <li>
-          <img src="img/slider2.jpg" />
+          <img src="https://assets.soundgym.co/general/register.png" />
           <!-- random image -->
           <div class="caption left-align">
-            <h1>Pearl Valley</h1>
+            <h1 class="white-text">Pearl Valley</h1>
           </div>
         </li>
         <li>
-          <img src="img/slider1.jpg" />
+          <img src="https://assets.soundgym.co/general/register.png" />
           <!-- random image -->
           <div class="caption left-align">
-            <h3>Goods And Foods, Services And Events, Digital Products</h3>
+            <h3 class="white-text">Sound Engineering Services</h3>
         </li>
       </ul>
     </section>
-    <!-----eccwid shop start-->
-    
-
-<div id="my-search-39767131"></div>
-     <div id="my-categories-39767131"></div>
-     <div class="ec-cart-widget"></div>
-    <div id="my-store-39767131"></div>
-    <div>
-    <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?39767131&data_platform=code&data_date=2020-10-30" charset="utf-8"></script>
-    <script type="text/javascript"> xSearch("id=my-search-39767131"); </script>
-    <script type="text/javascript"> xCategoriesV2("id=my-categories-39767131"); </script>
-    <script type="text/javascript">Ecwid.init();</script>
-    <script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-39767131");</script>
-    </div>
-     <!-----eccwid shop -->
+   
     <!-- Section: Service -->
 
     <div id="service" class="container scrollspy">
@@ -118,13 +133,11 @@
               <h2 class="center black-text">
                 <i class="material-icons">flash_on</i>
               </h2>
-              <h5 class="center">Goods And Foods</h5>
-
+              <h5 class="center">Music Production</h5>
+             
               <p class="light">
-                We did most of the heavy lifting for you to provide a default
-                stylings that incorporate our custom components. Additionally,
-                we refined animations and transitions to provide a smoother
-                experience for developers.
+                A blend of innovative & technical skills. 
+                Hire us today for your audio and music production project in Kampala, Uganda and East Africa..
               </p>
             </div>
           </div>
@@ -134,14 +147,10 @@
               <h2 class="center black-text">
                 <i class="material-icons">group</i>
               </h2>
-              <h5 class="center">Events And Services</h5>
+              <h5 class="center">Teachings Production</h5>
 
               <p class="light">
-                By utilizing elements and principles of Material Design, we were
-                able to create a framework that incorporates components and
-                animations that provide more feedback to users. Additionally, a
-                single underlying responsive system across all platforms allow
-                for a more unified user experience.
+                Are you a teacher?. Craete a digital library of all your knowledge and pass it on as your legacy.
               </p>
             </div>
           </div>
@@ -151,13 +160,10 @@
               <h2 class="center black-text">
                 <i class="material-icons">settings</i>
               </h2>
-              <h5 class="center">Digital Products</h5>
+              <h5 class="center">Radio Adverts</h5>
 
               <p class="light">
-                We have provided detailed documentation as well as specific code
-                examples to help new users get started. We are also always open
-                to feedback and can answer any questions a user may have about
-                Materialize.
+                Pearl Valley is your #1 source and producer of custom radio commercials.
               </p>
             </div>
           </div>
@@ -294,6 +300,23 @@
               </form>
             </div>
           </div>
+
+
+           <!-----eccwid shop start-->
+    
+
+<div id="my-search-39767131"></div>
+<div id="my-categories-39767131"></div>
+<div class="ec-cart-widget"></div>
+<div id="my-store-39767131"></div>
+<div>
+<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?39767131&data_platform=code&data_date=2020-10-30" charset="utf-8"></script>
+<script type="text/javascript"> xSearch("id=my-search-39767131"); </script>
+<script type="text/javascript"> xCategoriesV2("id=my-categories-39767131"); </script>
+<script type="text/javascript">Ecwid.init();</script>
+<script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-39767131");</script>
+</div>
+<!-----eccwid shop -->]
 
     <footer class=" page-footer colored ">
       <div class="container">
